@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Fredericka+the+Great|Montserrat');
+.book-container, .book-container-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1315px !important;
+    
+    .content {
+        color: rgba(102,0,102,0.6);
+    }
+
+    .book-form {
+        width: 40%;
+        // padding: 30px 40px;
+        height: fit-content;
+        border: none;
+        h5 {
+            color: white;
+            opacity: 0.9;
+            background-color: #B78EB0;
+            border-radius: 0 !important;
+            padding: 30px;
+            text-transform: uppercase;
+        }
+        form {
+            padding: 35px 10px;
+
+            label {
+                color: rgba(102,0,102,0.7) !important;
+                margin-left: 14%;
+                font-size: 15px;
+                margin-bottom: -5px;
+                text-transform: uppercase;
+            }
+
+            button {
+                background-color: white;
+                border: 2px solid rgba(102, 0, 102, 0.4);
+                color: rgba(102,0,102,0.5);
+                font-weight: bold;
+                display: block;
+                width: 71%;
+                margin: 5% auto;
+                text-transform: uppercase;
+                padding: 8px;
+                font-size: 16px;
+                border-radius: 3px;
+            }
+        }
+        input, textarea, select {
+            width: 71%;
+            margin: 5px auto 4%;
+            border: 0 !important;
+            border-bottom: 1px solid rgba(102, 0, 102, 0.7) !important;
+            border-radius: 0 !important;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        textarea {
+            margin: 15px 0 0 14%;
+        }
+    }
+
+    .book-list {
+        padding: 20px;
+        width: 60%;
+        margin-left: 30px;
+        border: 3px solid rgba(102,0,102,0.4);
+
+        h5 {
+            text-transform: uppercase;
+            color: rgba(102,0,102,0.4);
+        }
+
+        .list-group-item {
+            display: flex;
+            padding: 25px;
+
+            button {
+                margin-left: 5px;
+                border: none;
+
+                &.editBtn {
+                    background-color: purple;
+                    padding: 6px 20px;
+                }
+
+                &.detailsBtn {
+                    background-color: rgba(102,0,102,0.4);
+                }
+            }
+        }
+    }
+}
+
+.book-container {
+    justify-content: space-between;
+}
+
+.list-group-wrapper {
+    width: 100%;
+}
+.grid-group-wrapper {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .btnWrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.list-group-wrapper .list-group-item {
+     margin-bottom: 10px;
+     display: flex;
+ }
+
+.grid-group-wrapper .list-group-item {
+    margin-bottom: 10px;
+    display: flex;
+    width: 49.5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.books-wrapper h4, .books-wrapper p {
+    color: rgba(102,0,102,0.7);
+}
+
+.list-group-wrapper .book-img {
+    width: 30%;
+    margin-right: 25px;
+}
+
+.grid-group-wrapper .book-img {
+    width: 65%;
+}
+
+.grid-group-wrapper h4 {
+    text-align: center;
+}
+
+.book-info {
+    padding-top: 5px;
+    width: 100%;
+    // width: 65%;
+    // p {
+    //     text-overflow: ellipsis;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    // }
+}
+
+
+.options button {
+    background-color: white;
+    border: 2px solid rgba(102,0,102,0.4);
+    color: rgba(102,0,102,0.5);
+    font-weight: bold;
+}
+
+.options button:hover {
+  background-color: #ddd;
+}
+
+.options button.active {
+  background-color: rgba(102,0,102,0.4);
+  border-color: rgba(102,0,102,0.2);
+  color: white;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+.books-wrapper {
+    padding: 20px;
+    border: 3px solid rgba(102,0,102,0.4);
+}
+
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(102,0,102,0.4);
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.gridBtn {
+    margin-left: 5px;
+}
+
+.book-details {
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1315px !important;
+    .card {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .card-body {
+        h2 {
+            font-family: 'Fredericka the Great';
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        padding: 50px;
+        color: rgba(102,0,102,0.6);
+    }
+    .form-card {
+        margin-top: 35px;
+        padding: 0 0 35px;
+
+        height: fit-content;
+        border: none;
+        h5 {
+            color: white;
+            opacity: 0.9;
+            background-color: #B78EB0;
+            border-radius: 0 !important;
+            padding: 30px;
+            text-transform: uppercase;
+        }
+        form {
+            padding: 35px 10px 20px;
+
+            label {
+                color: rgba(102,0,102,0.7) !important;
+                margin-left: 14%;
+                font-size: 15px;
+                margin-bottom: -10px;
+                text-transform: uppercase;
+            }
+
+            button {
+                background-color: white;
+                border: 2px solid rgba(102, 0, 102, 0.4);
+                color: rgba(102,0,102,0.5);
+                font-weight: bold;
+                display: block;
+                width: 71%;
+                margin: 5% auto;
+                text-transform: uppercase;
+                padding: 8px;
+                font-size: 16px;
+                border-radius: 3px;
+            }
+        }
+        input, select {
+            width: 71%;
+            margin: 5px auto 4%;
+            border: 0 !important;
+            border-bottom: 1px solid rgba(102, 0, 102, 0.7) !important;
+            border-radius: 0 !important;
+            font-size: 20px!important;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .illust-card {
+        padding: 20px;
+        
+        h4 {
+            color: rgba(102,0,102,0.6);
+            font-family: 'Fredericka the Great';
+            font-size: 40px;
+        }
+    }
+
+    form {
+        width: 70%;
+        margin: 35px auto 0;
+
+        
+    }
+}
+
+.details-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    img {
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .book-content {
+        width: 100%;
+    }
+}
+
+.bookapi-details {
+    margin: 0 auto!important;
+    width: 60%;
+}
+
+.detailsapi-content {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 30%;
+        margin: 25px auto 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// register
+
+.modal-content {
+    // width: 40%;
+    // padding: 30px 40px;
+    // height: fit-content;
+    border: none;
+    .modal-header {
+        color: white;
+        opacity: 0.9;
+        background-color: #B78EB0;
+        border-radius: 0 !important;
+        padding: 30px;
+        text-transform: uppercase;
+    }
+    form {
+        padding: 35px 10px;
+
+        label {
+            color: rgba(102,0,102,0.7) !important;
+            margin-left: 14%;
+            font-size: 15px;
+            margin-bottom: -5px;
+            text-transform: uppercase;
+        }
+
+        button {
+            background-color: white;
+            border: 2px solid rgba(102, 0, 102, 0.4);
+            color: rgba(102,0,102,0.5);
+            font-weight: bold;
+            display: block;
+            width: 71%;
+            margin: 5% auto;
+            text-transform: uppercase;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+    }
+    input, textarea, select {
+        width: 71%;
+        margin: 5px auto 4%;
+        border: 0 !important;
+        border-bottom: 1px solid rgba(102, 0, 102, 0.7) !important;
+        border-radius: 0 !important;
+        font-size: 16px;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    textarea {
+        margin: 15px 0 0 14%;
+    }
+}
+
+
+
+.emptyDiv {
+    display: none;
+}
+
+.illustator {
+    color: rgba(102,0,102,0.6);
+    font-size: 20px;
+    border-top: 1px solid rgba(102, 0, 102, 0.4);
+    padding: 25px 0 20px;
+
+    .illName {
+        font-weight: bold;
+    }
+
+    button {
+        background-color: rgba(102,0,102,0.5);
+        border-color: rgba(102,0,102,0.5);
+    }
+}

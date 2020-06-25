@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Fredericka+the+Great|Montserrat');
+.navbar {
+    z-index: 2;
+    padding: 0!important;
+    // background-color: purple;
+    // background-color: #8667a9;
+    background-color: rgba(134, 103, 169, 0.7);
+    // background-color: #B78EB0;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
+    @include media-breakpoint-down(sm) {
+        padding: 0.5rem 1rem;
+    }
+}
+.navbar-dark {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.07);
+    .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-up(md) {
+            // margin-left: -150px;
+            position: absolute;
+            left: 0;
+            .project-name {
+                font-size: 30px;
+                font-family: 'Fredericka the Great';
+            }
+        }
+
+        img {
+            height: 53px;
+            width: auto;
+            padding-left: 10px;
+        }
+
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-size: $font-size-md;
+            font-weight: $font-weight-semibold;
+            color: hsla(0,0%,100%,.7);
+            padding: 1rem 40px;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            &:hover, &.active {
+                border-bottom: 3px solid $white;
+                color: $white;
+                @include media-breakpoint-down(sm) {
+                    border-bottom: 3px solid transparent;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .nav-item + .nav-item {
+                border-top: 1px solid rgba($white, 0.2);
+            }
+        }
+
+        .nav-item {
+            a {
+            color: rgba(102, 0, 102, 0.8);
+            font-size: 13px;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            margin-top: 5px;
+            text-transform: uppercase;
+            }
+        }
+    }
+
+}
+@media (min-width: 768px) {
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+}
+
+.navbar .container {
+    margin-right: 65px!important;
+}
